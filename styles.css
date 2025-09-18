@@ -1,0 +1,356 @@
+ 
+/* إعادة ضبط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tahoma", sans-serif;
+}
+
+
+
+/*-----------------media queries-----------------------------*/
+/*شاشات الجوال */
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+/* الشاشات الأصغر جدًا */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  .login-card {
+    padding: 15px;
+  }
+}
+
+
+/* الهيدر */
+header {
+    background-color: rgb(73, 30, 30) ; 
+    color: white;
+    padding: 20px 10px;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #ffd700; /* ذهبي */
+}
+
+/* قسم الترحيب */
+.hero {
+    height: 90vh;
+    background: url("../images/سفره1.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #000;
+}
+.hero p {
+    margin: 15px 0;
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* باقي الأقسام */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.gallery h2{
+    margin-bottom: 12px;
+}
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.services ul {
+    list-style: none;
+    font-size: 1.1rem;
+}
+.services li {
+    margin: 10px 0;
+}
+
+/* الفوتر */
+footer {
+    background: rgb(208, 133, 75);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}/*----------خاص بصفحة من نحن--------------*/
+ 
+/* صفحة من نحن */
+.about {
+    padding: 50px 20px;
+    background-color: #fff3e0;
+}
+.about h2 {
+    color: #d2691e;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/*---------------خاص ب المحتوى--------------*/
+ 
+
+
+header h1 {
+    margin: 0;
+    padding: 0 20px;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* === معرض الصور === */
+.gallery {
+    padding: 50px 20px;
+    background-color: #f3e3d3; /* ترابي فاتح */
+}
+.gallery h2 {
+    color: #8b4513;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+/* شبكة الصور */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* كل بطاقة صورة */
+.card {
+    background-color: #fff3e0; /* خلفية فاتحة للبطاقة */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover; /* يجعل الصورة تمتلئ بالكامل */
+}
+
+.card h3 {
+    margin: 10px 0 20px 0;
+    color: #5c4033;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*خاص بتواصل معنا*/
+ 
+/* ===== القواعد العامة ===== */
+body {
+  font-family: "Tahoma", sans-serif;
+  background-color: #f8f4f0; /* بيج فاتح */
+  color: #3e2723; /* بني غامق */
+  line-height: 1.8;
+}
+
+/* ===== شريط التنقل (Navbar) ===== */
+.navbar {
+  background-color: #5d4037 !important; /* بني ترابي */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #f8f4f0 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f4f0 !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffd54f !important; /* ذهبي عند التمرير */
+}
+
+/* ===== الهيدر ===== */
+#headcon {
+  background: linear-gradient(rgba(93, 64, 55, 0.7), rgba(93, 64, 55, 0.7)), url("../images/header-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 80px 20px;
+  border-bottom: 5px solid #ffd54f;
+}
+
+/* ===== نموذج التواصل ===== */
+form .form-control {
+  border-radius: 10px;
+  border: 1px solid #a1887f;
+  padding: 12px;
+}
+
+form .btn {
+  background-color: #6d4c41;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+form .btn:hover {
+  background-color: #4e342e;
+}
+
+/* ===== معلومات التواصل ===== */
+ul li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* ===== أزرار التواصل الاجتماعي ===== */
+.btn-success {
+  background-color: #388e3c !important; /* أخضر زيتوني */
+  border: none;
+}
+
+.btn-primary {
+  background-color: #3b5998 !important; /* أزرق فيسبوك */
+  border: none;
+}
+
+.btn-info {
+  background-color: #1da1f2 !important; /* أزرق تويتر */
+  border: none;
+}
+
+/* ===== الفوتر ===== */
+footer {
+  background-color: #3e2723;
+  border-top: 5px solid #ffd54f;
+}
+/*-------------------------------------------------------------------------------------------------*/
+ 
+/* ===== صفحة تسجيل الدخول ===== */
+.login-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #795548, #a1887f, #d7ccc8); /* تدرج ترابي */
+}
+
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #f8f4f0; /* بيج فاتح */
+  border: 1px solid #d7ccc8;
+}
+
+.login-card h3 {
+  color: #5d4037; /* بني */
+  font-weight: bold;
+}
+
+.login-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #a1887f;
+  padding: 12px;
+}
+
+.login-card .btn-primary {
+  background-color: #6d4c41; /* بني متوسط */
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-card .btn-primary:hover {
+  background-color: #4e342e; /* بني أغمق */
+}
+
+.login-card a {
+  color: #5d4037;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.login-card a:hover {
+  color: #d7a74f; /* ذهبي عند التمرير */
+}
+

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا</title>
+
+  <!-- Bootstrap من الملفات المحلية -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../fontawesome-free-7.0.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-7.0.1-web/css/fontawesome.min.css">
+
+  <!-- ملف التنسيقات الخاص بك -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body dir="rtl">
+
+  <!--  شريط علوي (Navbar) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">المأكولات اليمنية</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">المعرض</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  قسم العنوان -->
+  <header class="text-center py-5 bg-light" id="headcon">
+    <h1 class="mb-3">تواصل معنا</h1>
+    <p class="lead">يسعدنا أن نتلقى استفساراتكم وملاحظاتكم</p>
+  </header>
+
+  <!--  قسم المحتوى -->
+  <section class="container my-5">
+    <div class="row">
+      <!-- نموذج التواصل -->
+      <div class="col-md-6">
+        <h3 class="mb-4">أرسل رسالة</h3>
+        <form>
+          <div class="mb-3">
+            <label class="form-label">الاسم الكامل</label>
+            <input type="text" class="form-control" placeholder="ادخل اسمك" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" placeholder="example@mail.com" required >
+          </div>
+          <div class="mb-3">
+            <label class="form-label">الرسالة</label>
+            <textarea class="form-control" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">إرسال</button>
+        </form>
+      </div>
+
+      <!-- معلومات التواصل -->
+      <div class="col-md-6">
+        <h3 class="mb-4">معلومات التواصل</h3>
+        <ul class="list-unstyled">
+          <li><strong>📍 العنوان:</strong> صنعاء - اليمن</li>
+          <li><strong>📞 الهاتف:</strong> +967 777 000 000</li>
+          <li><strong>✉️ البريد:</strong> info@example.com</li>
+        </ul>
+
+        <!-- أيقونات التواصل -->
+        <div class="mt-4">
+          <a href="https://wa.me/+967 777 000 000" class="btn btn-success me-2"><i class="fab fa-whatsapp"></i>واتساب</a>
+          
+          <a href="https://www.facebook.com" class="btn btn-primary me-2">فيسبوك<i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" class="btn btn-info text-white"><i class="fab fa-twitter"></i>تويتر</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  الفوتر -->
+  <footer >
+    <p class="mb-0">جميع الحقوق محفوظة © 2025</p>
+  </footer>
+
+  <!-- Bootstrap JS من الملفات المحلية -->
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
